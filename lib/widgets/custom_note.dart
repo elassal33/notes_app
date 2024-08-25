@@ -19,7 +19,7 @@ class custom_note extends StatelessWidget {
         decoration: BoxDecoration(color: Colors.orange,borderRadius:BorderRadius.circular(16) ),
       child: Column(crossAxisAlignment: CrossAxisAlignment.end,children: [
           ListTile(
-          title: Text('flutter tips',style: TextStyle(color: Colors.black,fontSize: 30),),
+          title:  Text('flutter tips',style: TextStyle(color: Colors.black,fontSize: 30),),
           subtitle:Padding(
             padding: const EdgeInsets.only(top: 20,),
             child: Text('learn flutte wadasd ddd dddddddddr hhhhhhhhh',style: TextStyle(color: Colors.black.withOpacity(0.5) ,fontSize: 20),),

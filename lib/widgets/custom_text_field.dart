@@ -7,13 +7,19 @@ final int max;
   Widget build(BuildContext context) {
   return Padding(
     padding: const EdgeInsets.only(bottom: 20),
-    child: TextField(
+    child: TextFormField(
+      validator: (value) {
+              if (value!.isEmpty) {
+                return 'Please enter some text';
+              }
+              return null;
+            },
       maxLines: max,
       decoration: InputDecoration(
          
         hintText: hint,
-        focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: const Color.fromARGB(255, 63, 158, 236)),
+        focusedBorder:  OutlineInputBorder(
+          borderSide: const BorderSide(color: Color.fromARGB(255, 63, 158, 236)),
           borderRadius: BorderRadius.circular(8)
         ),
         border: OutlineInputBorder(
