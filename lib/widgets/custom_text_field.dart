@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class Textf extends StatelessWidget{
- const Textf({required this.hint,required this.max});
+ const Textf({required this.hint,required this.max, this.onSaved});
 final  String hint;
 final int max;
+final void Function(String?)? onSaved;
   Widget build(BuildContext context) {
   return Padding(
     padding: const EdgeInsets.only(bottom: 20),
     child: TextFormField(
+      onChanged:onSaved,
       validator: (value) {
               if (value!.isEmpty) {
                 return 'Please enter some text';

@@ -5,7 +5,7 @@ class custom_app_bar extends StatelessWidget {
     ,super.key,
   });
 final String title;
-final IconData icon;
+final IconButton icon;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -19,10 +19,11 @@ final IconData icon;
           ,const Spacer()
         ,Padding(
           padding: const EdgeInsets.only(right: 5),
-          child: Container(height:40,width: 40,decoration: BoxDecoration(color:Colors.white.withOpacity(0.1) ,borderRadius: BorderRadius.circular(16)),child: Icon(icon),),
+          child: Stack(alignment: Alignment.center,children: [Container(height:40,width: 40,decoration: BoxDecoration(color:Colors.white.withOpacity(0.1) ,borderRadius: BorderRadius.circular(16)),),IconButton(onPressed:(){}, icon: icon,iconSize: 20,)],),
         )
         ],
       ),
     );
   }
 }
+
