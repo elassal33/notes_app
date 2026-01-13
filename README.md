@@ -1,16 +1,7 @@
 # my_notes_app
 
-A new Flutter project.
+Simple Flutter note app that allows users to create, update, and delete notes.
 
-## Getting Started
+🎥 Demo Video:
+https://drive.google.com/file/d/1cac5Mni9xe7hd1oFLRctpGnqo6XG35di/view?usp=drive_link
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
